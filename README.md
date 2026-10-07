@@ -1,2 +1,25 @@
 # akylbay-shop
 Simple clothing store website built with HTML, CSS and JavaScript
+# Akylbay Shop
+
+Учебный интернет-магазин одежды, созданный на HTML, CSS и JavaScript.
+
+## Что реализовано
+
+- главная страница
+- каталог товаров
+- фильтрация по категориям
+- корзина
+- подсчёт стоимости заказа
+- оформление заказа через WhatsApp
+- адаптивный дизайн
+
+## Технологии
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Live Demo
+
+https://neon-genie-51e606.netlify.app
