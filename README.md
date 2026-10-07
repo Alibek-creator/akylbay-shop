@@ -1,5 +1,3 @@
-# akylbay-shop
-Simple clothing store website built with HTML, CSS and JavaScript
 # Akylbay Shop
 
 Учебный интернет-магазин одежды, созданный на HTML, CSS и JavaScript.
