@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Akylbay Shop — современная одежда в чёрно-белом стиле с доставкой по Казахстану.">
+  <title>Akylbay Shop — одежда для твоего ритма</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">
+    Бесплатная доставка по Алматы при заказе от 25 000 ₸
+  </div>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Akylbay Shop">
+        AKYLBAY<span>SHOP</span>
+      </a>
+
+      <nav class="nav" id="mainNav" aria-label="Основная навигация">
+        <a href="#catalog">Каталог</a>
+        <a href="#about">О нас</a>
+        <a href="#delivery">Доставка</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-button cart-button" id="cartButton" type="button" aria-label="Открыть корзину">
+          <span class="cart-icon" aria-hidden="true">🛍</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-button" id="menuButton" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">Новая коллекция / 2026</p>
+          <h1>ОДЕЖДА<br>ДЛЯ ТВОЕГО<br><span>РИТМА</span></h1>
+          <p class="hero__text">
+            Минималистичные вещи на каждый день. Честные цены, удобная посадка
+            и доставка по всему Казахстану.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#catalog">Смотреть каталог</a>
+            <a class="button button--ghost" href="#about">Узнать больше</a>
+          </div>
+          <div class="hero__stats">
+            <div><strong>500+</strong><span>заказов</span></div>
+            <div><strong>24/7</strong><span>приём заказов</span></div>
+            <div><strong>14 дней</strong><span>на обмен</span></div>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-label="Новая коллекция Akylbay Shop">
+          <div class="hero__card hero__card--back">
+            <span>ESSENTIALS</span>
+          </div>
+          <div class="hero__card hero__card--front">
+            <div class="hero__figure">
+              <div class="hero__head"></div>
+              <div class="hero__body"></div>
+              <div class="hero__leg hero__leg--left"></div>
+              <div class="hero__leg hero__leg--right"></div>
+            </div>
+            <div class="hero__badge">
+              <span>NEW</span>
+              DROP 01
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container benefits__grid">
+        <div class="benefit"><span>01</span><div><strong>Быстрая доставка</strong><p>По Алматы — от 1 дня</p></div></div>
+        <div class="benefit"><span>02</span><div><strong>Удобная оплата</strong><p>Kaspi, карта или наличные</p></div></div>
+        <div class="benefit"><span>03</span><div><strong>Поддержка</strong><p>Поможем подобрать размер</p></div></div>
+      </div>
+    </section>
+
+    <section class="catalog section" id="catalog">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Выбери свой образ</p>
+            <h2>КАТАЛОГ</h2>
+          </div>
+          <p>Базовые модели, которые легко сочетать между собой.</p>
+        </div>
+
+        <div class="filters" id="filters" role="group" aria-label="Фильтр товаров">
+          <button class="filter-button is-active" type="button" data-category="all">Все</button>
+          <button class="filter-button" type="button" data-category="outerwear">Верхняя одежда</button>
+          <button class="filter-button" type="button" data-category="tops">Верх</button>
+          <button class="filter-button" type="button" data-category="bottoms">Низ</button>
+          <button class="filter-button" type="button" data-category="accessories">Аксессуары</button>
+        </div>
+
+        <div class="products" id="products"></div>
+      </div>
+    </section>
+
+    <section class="banner section" id="about">
+      <div class="container">
+        <div class="banner__inner">
+          <div class="banner__number">10%</div>
+          <div>
+            <p class="eyebrow">Первый заказ</p>
+            <h2>СКИДКА ДЛЯ НОВЫХ<br>ПОКУПАТЕЛЕЙ</h2>
+          </div>
+          <a class="button button--light" href="#catalog">Выбрать вещи</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section">
+      <div class="container about__grid">
+        <div class="about__visual">
+          <div class="about__stamp">AKYLBAY<br>QUALITY</div>
+          <div class="about__line">MINIMAL / COMFORT / EVERYDAY</div>
+        </div>
+        <div class="about__content">
+          <p class="eyebrow">О бренде</p>
+          <h2>МЕНЬШЕ ШУМА.<br>БОЛЬШЕ СТИЛЯ.</h2>
+          <p>
+            Akylbay Shop — локальный магазин повседневной одежды. Мы выбираем
+            спокойный дизайн, практичные материалы и понятные силуэты.
+          </p>
+          <p>
+            Каждая вещь создана для того, чтобы ты мог собрать образ за несколько
+            минут и чувствовать себя уверенно весь день.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="delivery section" id="delivery">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Как получить заказ</p>
+            <h2>ДОСТАВКА И ОПЛАТА</h2>
+          </div>
+        </div>
+        <div class="delivery__grid">
+          <article><span>01</span><h3>Оформите заказ</h3><p>Добавьте товары в корзину и отправьте заказ через WhatsApp.</p></article>
+          <article><span>02</span><h3>Подтвердите детали</h3><p>Менеджер уточнит размер, адрес и удобный способ оплаты.</p></article>
+          <article><span>03</span><h3>Получите покупку</h3><p>Доставим по Алматы или отправим в любой город Казахстана.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer__grid">
+      <div>
+        <a class="logo logo--footer" href="#top">AKYLBAY<span>SHOP</span></a>
+        <p>Одежда для твоего ритма.</p>
+      </div>
+      <div>
+        <h3>Навигация</h3>
+        <a href="#catalog">Каталог</a>
+        <a href="#about">О нас</a>
+        <a href="#delivery">Доставка</a>
+      </div>
+      <div>
+        <h3>Контакты</h3>
+        <a href="tel:+77002788639">+7 700 278 86 39</a>
+        <a href="mailto:hello@akylbayshop.kz">hello@akylbayshop.kz</a>
+        <p>Алматы, Казахстан</p>
+      </div>
+      <div>
+        <h3>Мы в соцсетях</h3>
+        <a href="#" aria-label="Instagram">Instagram:akylbay alibek</a>
+        <a href="#" aria-label="TikTok">TikTok</a>
+        <a href="https://wa.me/77002788639" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 Akylbay Shop</span>
+      <span>Made with confidence</span>
+    </div>
+  </footer>
+
+  <a
+    class="whatsapp-float"
+    id="whatsappFloat"
+    href="#"
+    target="_blank"
+    rel="noopener"
+    aria-label="Написать в WhatsApp"
+  >
+    <span>WA</span>
+  </a>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Корзина">
+    <div class="cart-drawer__header">
+      <div>
+        <p class="eyebrow">Ваш заказ</p>
+        <h2>КОРЗИНА</h2>
+      </div>
+      <button class="close-button" id="closeCart" type="button" aria-label="Закрыть корзину">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-empty" id="cartEmpty">
+      <div class="cart-empty__icon">□</div>
+      <h3>Корзина пуста</h3>
+      <p>Добавьте вещи из каталога.</p>
+      <button class="button button--primary" id="continueShopping" type="button">Перейти в каталог</button>
+    </div>
+
+    <div class="cart-summary" id="cartSummary">
+      <div class="cart-summary__row">
+        <span>Итого</span>
+        <strong id="cartTotal">0 ₸</strong>
+      </div>
+      <button class="button button--primary button--full" id="checkoutButton" type="button">
+        Заказать в WhatsApp
+      </button>
+      <p>После нажатия откроется WhatsApp с готовым текстом заказа.</p>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
